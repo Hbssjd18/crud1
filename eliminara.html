@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eliminar Registro de Películas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url("333.avif") no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Texto negro para mayor contraste */
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            border-radius: 10px; /* Bordes más redondeados */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            text-align: center; /* Centrar los botones de navegación */
+        }
+
+        h2 {
+            text-align: center;
+            color: #FF6347; /* Color coral para título */
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333; /* Texto negro para mayor contraste */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #f2f2f2; /* Fondo gris claro para campos de entrada */
+            color: #333; /* Color de texto principal */
+            text-align: center; /* Alineación centrada del texto */
+        }
+
+        input[type="submit"] {
+            background-color: #FF8C00; /* Color naranja para botón */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+            margin: 0 auto; /* Centrar el botón */
+            display: block; /* Hacer que el botón sea de bloque para ocupar el ancho completo */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #FF4500; /* Tono de naranja más oscuro al pasar el ratón */
+        }
+
+        /* Estilos para el mensaje de eliminación */
+        .delete-message {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .delete-message.success {
+            background-color: #dff0d8; /* Color de fondo para mensaje de éxito */
+            color: #3c763d; /* Color de texto para mensaje de éxito */
+            border: 1px solid #d6e9c6; /* Borde para mensaje de éxito */
+        }
+
+        .delete-message.error {
+            background-color: #f2dede; /* Color de fondo para mensaje de error */
+            color: #a94442; /* Color de texto para mensaje de error */
+            border: 1px solid #ebccd1; /* Borde para mensaje de error */
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px; /* Espaciado entre los botones */
+            background-color: #20B2AA; /* Color turquesa para enlaces */
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+        }
+
+        a:hover {
+            background-color: #008B8B; /* Tono de turquesa más oscuro al pasar el ratón */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Eliminar Registro de Películas</h2>
+
+   
+
+    <form method="post" action="eliminara.php" class="section">
+        <label>ID de la Película a Eliminar:</label><br>
+        <input type="text" name="id"><br>
+        <input type="submit" value="Eliminar">
+    </form>
+</div>
+
+<div style="text-align: center;"> <!-- Div para centrar los botones de navegación -->
+    <a href="crud.html">Crear</a>
+    <a href="leeer.html">Leer</a>
+    <a href="actualizara.html">Actualizar</a>
+</div>
+</body>
+</html>

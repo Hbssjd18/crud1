@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actualizar Registro de Películas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("1111.webp") no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Texto negro para mayor contraste */
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            border-radius: 10px; /* Bordes más redondeados */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+            color: #FF1493; /* Color rosa intenso para título */
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333; /* Texto negro para mayor contraste */
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #FF1493; /* Borde rosa intenso */
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: rgba(255, 255, 255, 0.5); /* Fondo de campos de entrada semitransparente */
+            color: #333; /* Color de texto principal */
+            text-align: center; /* Alineación centrada del texto */
+        }
+
+        input[type="submit"], a {
+            background-color: #FF6347; /* Color naranja intenso */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+            display: block; /* Hacer que el botón sea de bloque para ocupar el ancho completo */
+            text-align: center; /* Alineación centrada del texto */
+            text-decoration: none; /* Quita subrayado del enlace */
+            margin: 10px auto; /* Centrar el botón */
+            width: 50%; /* Ancho del 50% para centrar */
+            max-width: 200px; /* Tamaño máximo del botón */
+        }
+
+        input[type="submit"]:hover, a:hover {
+            background-color: #FF4500; /* Tono de naranja intenso más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Actualizar Registro de Películas</h2>
+
+    <!-- Muestra el mensaje de actualización aquí -->
+ 
+
+    <form method="post" action="actualizara.php" class="section">
+        <label>ID de la Película a Actualizar:</label><br>
+        <input type="text" name="id"><br>
+        <label>Nuevo Título:</label><br>
+        <input type="text" name="titulo"><br>
+        <label>Nuevo Autor:</label><br>
+        <input type="text" name="autor"><br>
+        <label>Nuevo Director:</label><br>
+        <input type="text" name="director"><br> <!-- Campo para el nuevo director -->
+        <label>Nuevo Género:</label><br>
+        <input type="text" name="genero"><br>
+        <input type="submit" value="Actualizar">
+    </form>
+</div>
+
+<a href="crud.html">Crear pelicula</a>
+<a href="leeer.html">mirar pelicula</a>
+<a href="eliminara.html">Eliminar pelicula</a>
+</body>
+</html>
